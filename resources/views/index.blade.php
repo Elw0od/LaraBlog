@@ -2,7 +2,7 @@
 <html lang="fr" class="no-js">
 <head>
 	<meta charset="utf-8">
-	<title>Blog &mdash; Sault</title>
+	<title>{{ $settings->site_name }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="description" content="Sault is fully responsive creative agency/freelancer portfolio HTML site template that looks great on any device.">
@@ -20,7 +20,7 @@
 	<main id="content" class="white-background">
 		<div class="container">
 			<div class="row blog-listing no-sidebar">
-				<div class="col-12">
+				<div class="col-12 col-lg-8">
 					<article class="post featured has-thumbnail">
 						<a href="{{ route('post.single', ['slug' => $first_post->slug ]) }}" class="feature-image-link"><img src="{{ $first_post->featured }}" width="1180" height="680" alt=""></a>
 						<div class="post-details">
@@ -30,6 +30,16 @@
 							<a href="{{ route('post.single', ['slug' => $first_post->slug ]) }}" class="read-more">Continuer à lire<i class="saulticon-arrow-forward"></i></a>
 						</div>
 					</article>
+				</div>
+				<div class="col-12 col-lg-4">
+				<article class="grid-item post has-thumbnail">
+							<a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}" class="feature-image-link"><img src="{{ $second_post->featured }}" width="730" height="500" alt=""></a>
+							<div class="post-details">
+								<h4><a href="{{ route('post.single', ['slug' => $first_post->slug ]) }}">{{ $second_post->title }}</a></h4>
+								<p>{!! substr($second_post->content,0,80) !!}&hellip;</p>
+								<p class="meta clearfix"><a href="#" class="author-link">{{ $second_post->category->name }}</a> <a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}" class="read-more">Voir plus <i class="saulticon-arrow-forward"></i></a></p>
+							</div>
+						</article>
 				</div>
 				<div class="col-12">
 					<div class="grid clearfix" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "gutter": ".gutter-sizer", "percentPosition": true, "transitionDuration": "0.3s" }'>

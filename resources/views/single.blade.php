@@ -17,18 +17,18 @@
 						<div class="post-header">
 							<h2>{{ $post->title }}</h2>
 							<p class="meta-info">
-								<span class="post-author">Posté Par<a href="#"> Rory Thompson</a></span>
+								<span class="post-author">Posté Par<a href="#"> {{ $post->user->name }}</a></span>
 								<span class="post-date">{{ $post->created_at->toFormattedDateString() }}</span>
 							</p>
 						</div>
 						<div class="post-content">
-                                    <p>{!! $post->content !!}</p>
+                        	<p>{!! $post->content !!}</p>
 						</div>
 					</article>
 
 					<div class="row post-footer">
 						<div id="share-post" class="col-md-6">
-							<h5>Share this:</h5>
+							<h5>Tags :</h5>
 							<p>
                             <div class="socials text-center">
                                     <div class="addthis_inline_share_toolbox_gjor"></div>
@@ -47,7 +47,7 @@
 							<div class="sep"></div>
 						</div>
 						<div class="other-posts col-12 extra-margin-bottom">
-							<h5>Recommended reads</h5>
+							<h5>Articles récents</h5>
 							<div class="owl-carousel owl-thumbs-2">
                             @if($prev)
 								<div class="thumb">
@@ -68,7 +68,7 @@
 							</div>
 						</div>
 						<div class="author-info col-12 extra-margin-bottom">
-							<h5>About the author</h5>
+							<h5>A propos de l'auteur</h5>
 							<div class="author-avatar">
 								<img src="{{ asset($post->user->profile->avatar) }}" width="140" height="140" alt="">
 							</div>

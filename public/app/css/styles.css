@@ -614,12 +614,12 @@ hr,
 	border: 0;
 	line-height: 1;
 	text-align: center;
-	background-color: #654ce8;
+	background-color: #F9BF3B;
 }
 
 /* 4. Links */
 a {
-	color: #654ce8;
+	color: #F9BF3B;
 	text-decoration: none;
 }
 
@@ -791,7 +791,7 @@ input[type=button],
 	text-transform: uppercase;
 	background: none;
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-	background-color: #654ce8;
+	background-color: #F9BF3B;
 	color: #fff;
 	cursor: pointer;
 	outline: 0;
@@ -845,7 +845,7 @@ input[type=reset].white,
 input[type=button].white,
 .button.white {
 	background-color: #fff;
-	color: #654ce8;
+	color: #F9BF3B;
 	-webkit-box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .1);
 	        box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .1);
 }
@@ -1128,7 +1128,7 @@ body .extra-margin-top {
 	left: -1.5em;
 	width: 1.2rem;
 	font-size: 18px;
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .social-link {
@@ -1169,7 +1169,7 @@ body .extra-margin-top {
 .pagination > span,
 .pagination > .current {
 	color: #fff;
-	background-color: #654ce8;
+	background-color: #F9BF3B;
 }
 
 .pagination i {
@@ -1214,7 +1214,7 @@ body .extra-margin-top {
 }
 
 .tab-links li a.active {
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .tab-content {
@@ -1358,7 +1358,7 @@ body .extra-margin-top {
 }
 
 .text-color {
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .tweet {
@@ -1716,7 +1716,7 @@ body .extra-margin-top {
 }
 
 .owl-carousel .owl-dots .owl-dot.active span {
-	background-color: #654ce8;
+	background-color: #F9BF3B;
 }
 
 /* 8. Header section */
@@ -1757,7 +1757,7 @@ body .extra-margin-top {
 }
 
 #site-menu .current-menu-item > a {
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 #site-menu .menu-item-has-children {
@@ -2098,7 +2098,7 @@ body .extra-margin-top {
 }
 
 .team-member .social-links a {
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .brand-gallery {
@@ -2183,7 +2183,7 @@ body .extra-margin-top {
 }
 
 .project-thumb.welcome-message h1 a {
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .project-thumb img {
@@ -2227,7 +2227,7 @@ body .extra-margin-top {
 	-webkit-transition: .3s opacity, .3s visibility, .3s left;
 	-o-transition: .3s opacity, .3s visibility, .3s left;
 	transition: .3s opacity, .3s visibility, .3s left;
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .project-thumb a:hover > i {
@@ -2310,7 +2310,7 @@ body .extra-margin-top {
 #address-selector .change-address {
 	position: relative;
 	display: inline-block;
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 #address-selector .change-address:focus {
@@ -2476,7 +2476,7 @@ body .extra-margin-top {
 
 .widget li a:hover,
 .widget .current-cat > a {
-	color: #654ce8;
+	color: #F9BF3B;
 }
 
 .widget .subscribe-form input[type="email"] {
@@ -3566,7 +3566,7 @@ body .extra-margin-top {
 		top: 1.5rem;
 		left: 1rem;
 		opacity: 0;
-		color: #654ce8;
+		color: #F9BF3B;
 		-webkit-transition: .3s opacity, .3s left;
 		-o-transition: .3s opacity, .3s left;
 		transition: .3s opacity, .3s left;
