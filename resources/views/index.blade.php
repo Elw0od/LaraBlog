@@ -35,7 +35,7 @@
 				<article class="grid-item post has-thumbnail">
 							<a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}" class="feature-image-link"><img src="{{ $second_post->featured }}" width="730" height="500" alt=""></a>
 							<div class="post-details">
-								<h4><a href="{{ route('post.single', ['slug' => $first_post->slug ]) }}">{{ $second_post->title }}</a></h4>
+								<h4><a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}">{{ $second_post->title }}</a></h4>
 								<p>{!! substr($second_post->content,0,80) !!}&hellip;</p>
 								<p class="meta clearfix"><a href="#" class="author-link">{{ $second_post->category->name }}</a> <a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}" class="read-more">Voir plus <i class="saulticon-arrow-forward"></i></a></p>
 							</div>
@@ -44,19 +44,19 @@
 				<div class="col-12">
 					<div class="grid clearfix" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "gutter": ".gutter-sizer", "percentPosition": true, "transitionDuration": "0.3s" }'>
 						<article class="grid-item post has-thumbnail">
-							<a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}" class="feature-image-link"><img src="{{ $second_post->featured }}" width="730" height="500" alt=""></a>
+							<a href="{{ route('post.single', ['slug' => $third_post->slug ]) }}" class="feature-image-link"><img src="{{ $third_post->featured }}" width="730" height="500" alt=""></a>
 							<div class="post-details">
-								<h4><a href="{{ route('post.single', ['slug' => $first_post->slug ]) }}">{{ $second_post->title }}</a></h4>
-								<p>{!! substr($second_post->content,0,80) !!}&hellip;</p>
-								<p class="meta clearfix"><a href="#" class="author-link">{{ $second_post->category->name }}</a> <a href="{{ route('post.single', ['slug' => $second_post->slug ]) }}" class="read-more">Voir plus <i class="saulticon-arrow-forward"></i></a></p>
+								<h4><a href="{{ route('post.single', ['slug' => $first_post->slug ]) }}">{{ $third_post->title }}</a></h4>
+								<p>{!! substr($third_post->content,0,80) !!}&hellip;</p>
+								<p class="meta clearfix"><a href="#" class="author-link">{{ $third_post->category->name }}</a> <a href="{{ route('post.single', ['slug' => $third_post->slug ]) }}" class="read-more">Voir plus <i class="saulticon-arrow-forward"></i></a></p>
 							</div>
 						</article>
 						<article class="grid-item post has-thumbnail">
-							<a href="{{ route('post.single', ['slug' => $third_post->slug ]) }}" class="feature-image-link"><img src="{{ $third_post->featured }}" width="730" height="500" alt=""></a>
+							<a href="{{ route('post.single', ['slug' => $fourth_post->slug ]) }}" class="feature-image-link"><img src="{{ $fourth_post->featured }}" width="730" height="500" alt=""></a>
 							<div class="post-details">
-								<h4><a href="{{ route('post.single', ['slug' => $third_post->slug ]) }}">{{ $third_post->title }}</a></h4>
-								<p>{!! substr($third_post->content,0,80) !!}&hellip;</p>
-								<p class="meta clearfix"><a href="#" class="author-link">{{ $third_post->category->name }}</a> <a href="{{ route('post.single', ['slug' => $third_post->slug ]) }}" class="read-more">Voir plus <i class="saulticon-arrow-forward"></i></a></p>
+								<h4><a href="{{ route('post.single', ['slug' => $fourth_post->slug ]) }}">{{ $fourth_post->title }}</a></h4>
+								<p>{!! substr($fourth_post->content,0,80) !!}&hellip;</p>
+								<p class="meta clearfix"><a href="#" class="author-link">{{ $fourth_post->category->name }}</a> <a href="{{ route('post.single', ['slug' => $fourth_post->slug ]) }}" class="read-more">Voir plus <i class="saulticon-arrow-forward"></i></a></p>
 							</div>
 						</article>
 						<article class="grid-item post has-thumbnail">

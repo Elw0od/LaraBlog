@@ -37,7 +37,7 @@ class SettingsController extends Controller
 
         $settings->save();
 
-        Session::flash('success','Settings updated.');
+        Session::flash('success','Paramètres mis à jour');
 
         return redirect()->back();
     }

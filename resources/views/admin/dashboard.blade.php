@@ -4,7 +4,7 @@
             <div class="col-lg-3">
                 <div class="panel panel-info">
                     <div class="panel-heading text-center">
-                         POSTED
+                         Articles
                     </div>
                     <div class="panel-body">
                         <h1 class="text-center">{{ $posts_count }}</h1>
@@ -15,7 +15,7 @@
             <div class="col-lg-3">
                 <div class="panel panel-danger">
                     <div class="panel-heading text-center">
-                        TRASHED POSTS
+                        Corbeille
                     </div>
                     <div class="panel-body">
                         <h1 class="text-center">{{ $trashed_count }}</h1>
@@ -26,7 +26,7 @@
             <div class="col-lg-3">
                 <div class="panel panel-success">
                     <div class="panel-heading text-center">
-                        USERS 
+                        Utilisateurs
                     </div>
                     <div class="panel-body">
                         <h1 class="text-center">{{ $users_count }}</h1>
@@ -37,7 +37,7 @@
             <div class="col-lg-3">
                 <div class="panel panel-info">
                     <div class="panel-heading text-center">
-                        CATEGORIES
+                        Catégories
                     </div>
                     <div class="panel-body">
                         <h1 class="text-center">{{ $categories_count }}</h1>

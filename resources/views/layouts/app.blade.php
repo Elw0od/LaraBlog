@@ -86,53 +86,64 @@
                     <div class="col-lg-4">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="{{ route('home') }}">Home</a>
+                                <a href="{{ route('home') }}">Dashboard</a>
                             </li>
 
-                            <li class="list-group-item">
-                                <a href="{{ route('categories') }}">Categories</a>
-                            </li>
+                            <br>
 
                             <li class="list-group-item">
-                                <a href="{{ route('tags') }}">Tags</a>
-                            </li>
-
-                            @if(Auth::user()->admin)
-                                <li class="list-group-item">
-                                    <a href="{{ route('users') }}">Users</a>
-                                </li>
-
-                                <li class="list-group-item">
-                                    <a href="{{ route('user.create') }}">New user</a>
-                                </li>
-                            @endif
-
-                            <li class="list-group-item">
-                                    <a href="{{ route('user.profile') }}">My profile</a>
-                                </li>
-
-                            <li class="list-group-item">
-                                <a href="{{ route('tag.create') }}">Create tag</a>
-                            </li>
-
-                            <li class="list-group-item">
-                                <a href="{{ route('posts') }}">All posts</a>
-                            </li>
-
-                            <li class="list-group-item">
-                                <a href="{{ route('posts.trashed') }}">All trashed posts</a>
-                            </li>
-
-                            <li class="list-group-item">
-                                <a href="{{ route('category.create') }}">Create new category</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="{{ route('post.create') }}">Create new post</a>
+                                    <a href="{{ route('user.profile') }}">Mon profil</a>
                             </li>
 
                             @if(Auth::user()->admin)
                                 <li class="list-group-item">
-                                    <a href="{{ route('settings') }}">Settings</a>
+                                    <a href="{{ route('users') }}">Utilisateur</a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('user.create') }}">Créer un utilisateur</a>
+                                </li>
+
+                                <br>
+
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('tag.create') }}">Créer un tags</a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('category.create') }}">Créer une catégorie</a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('post.create') }}">Ecrire un article</a>
+                                </li>
+
+                                <br>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('tags') }}">Tags</a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('categories') }}">Catégories</a>
+                                </li>
+
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('posts') }}">Articles</a>
+                                </li>
+
+                                <br>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('posts.trashed') }}">Corbeille</a>
+                                </li>
+
+                                <br>
+
+                                <li class="list-group-item">
+                                    <a href="{{ route('settings') }}">Paramètres</a>
                                 </li>
                             @endif
                         </ul>

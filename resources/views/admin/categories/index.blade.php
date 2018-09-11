@@ -4,19 +4,19 @@
 
       <div class="panel panel-default">
             <div class="panel-heading">
-                  Categories
+                  Catégories
             </div>
             <div class="panel-body">
                   <table class="table table-hover">
                         <thead>
                               <th>
-                                    Category name
+                                    Catégorie
                               </th>
                               <th>
-                                    Editing 
+                                    Edition
                               </th>
                               <th>
-                                    Deleting
+                                    Suppression
                               </th>
                         </thead>
 
@@ -29,20 +29,20 @@
                                                 </td>
                                                 <td>
                                                       <a href="{{ route('category.edit', ['id' => $category->id ]) }}" class="btn btn-xs btn-info">
-                                                            Edit
+                                                            Editer
                                                       </a>
                                                 </td>
 
                                                 <td>
                                                       <a href="{{ route('category.delete', ['id' => $category->id ]) }}" class="btn btn-xs btn-danger">
-                                                            Delete
+                                                            Supprimer
                                                       </a>
                                                 </td>
                                           </tr>
                                     @endforeach
                               @else
                                      <tr>
-                                          <th colspan="5" class="text-center">No categories yet.</th>
+                                          <th colspan="5" class="text-center">Aucunes catégories</th>
                                     </tr>
                               @endif
                         </tbody>

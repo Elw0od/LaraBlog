@@ -6,7 +6,7 @@
 
       <div class="panel panel-default">
             <div class="panel-heading">
-                  Create a new tag
+                  Créer un tag
             </div>
 
             <div class="panel-body">
@@ -19,7 +19,7 @@
                         <div class="form-group">
                               <div class="text-center">
                                     <button class="btn btn-success" type="submit">
-                                          Store Tag
+                                          Créer le tag
                                     </button>
                               </div>
                         </div>

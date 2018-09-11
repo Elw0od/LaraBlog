@@ -33,7 +33,7 @@ class PostsController extends Controller
 
         if($categories->count() == 0 || $tags->count() == 0)
         {
-            Session::flash('info', 'You must have some categories and tags before attempting to create a post.');
+            Session::flash('info', 'Vous devez avoir certaines catégories et balises avant de tenter de créer une publication.');
 
             return redirect()->back();
         }
@@ -76,7 +76,7 @@ class PostsController extends Controller
 
         $post->tags()->attach($request->tags);
 
-        Session::flash('success', 'Post created succesfully.');
+        Session::flash('success', 'Post créé avec succès.');
 
 
         return redirect()->back();
@@ -146,7 +146,7 @@ class PostsController extends Controller
 
         $post->tags()->sync($request->tags);
 
-        Session::flash('success', 'Post updated successfully.');
+        Session::flash('success', 'Article mis à jour.');
 
         return redirect()->route('posts');
     }
@@ -163,7 +163,7 @@ class PostsController extends Controller
 
         $post->delete();
 
-        Session::flash('success', 'The post was just trashed.');
+        Session::flash('success', 'Article mis à la corbeille.');
 
         return redirect()->back();
     }
@@ -180,7 +180,7 @@ class PostsController extends Controller
         
         $post->forceDelete();
 
-        Session::flash('success', 'Post deleted permanently.');
+        Session::flash('success', 'Article supprimé pour toujours.');
 
         return redirect()->back();
     }
@@ -191,7 +191,7 @@ class PostsController extends Controller
 
         $post->restore();
 
-        Session::flash('success', 'Post restored successfully.');
+        Session::flash('success', 'Article restauré avec succès.');
 
         return redirect()->route('posts');
     }

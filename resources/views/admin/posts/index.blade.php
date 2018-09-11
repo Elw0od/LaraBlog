@@ -4,7 +4,7 @@
 
       <div class="panel panel-default">
             <div class="panel-heading">
-                  Published posts
+                  Articles publiés
             </div>
             <div class="panel-body">
                   <table class="table table-hover">
@@ -13,13 +13,13 @@
                                     Image
                               </th>
                               <th>
-                                    Title
+                                    Titre
                               </th>
                               <th>
-                                    Edit
+                                    Edition
                               </th>
                               <th>  
-                                    Trash
+                                    Corbeille
                               </th>
                         </thead>
 
@@ -30,17 +30,17 @@
                                                 <td><img src="{{ $post->featured }}" alt="{{ $post->title }}" width="90px" height="50px"></td>
                                                 <td>{{ $post->title }}</td>
                                                 <td>
-                                                      <a href="{{ route('post.edit', ['id' => $post->id]) }}" class="btn btn-xs btn-info">Edit</a>
+                                                      <a href="{{ route('post.edit', ['id' => $post->id]) }}" class="btn btn-xs btn-info">Editer</a>
                                                 </td>
 
                                                 <td>
-                                                      <a href="{{ route('post.delete', ['id' => $post->id]) }}" class="btn btn-xs btn-danger">Trash</a>
+                                                      <a href="{{ route('post.delete', ['id' => $post->id]) }}" class="btn btn-xs btn-danger">Supprimer</a>
                                                 </td>
                                           </tr>
                                     @endforeach
                               @else
                                     <tr>
-                                          <th colspan="5" class="text-center">No published posts</th>
+                                          <th colspan="5" class="text-center">Aucun article publié</th>
                                     </tr>
                               @endif
                         </tbody>

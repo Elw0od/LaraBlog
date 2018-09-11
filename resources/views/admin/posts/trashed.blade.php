@@ -4,7 +4,7 @@
 
       <div class="panel panel-default">
             <div class="panel-heading">
-                  Trashed posts
+                  Corbeille à article
             </div>
             <div class="panel-body">
                   <table class="table table-hover">
@@ -13,16 +13,13 @@
                                     Image
                               </th>
                               <th>
-                                    Title
-                              </th>
-                              <th>
-                                    Edit
+                                    Titre
                               </th>
                               <th>  
-                                    Restore
+                                    Restaurer
                               </th>
                               <th>
-                                    Destroy
+                                    Détruire
                               </th>
                         </thead>
 
@@ -32,18 +29,17 @@
                                           <tr>
                                                 <td><img src="{{ $post->featured }}" alt="{{ $post->title }}" width="90px" height="50px"></td>
                                                 <td>{{ $post->title }}</td>
-                                                <td>Edit</td>
                                                 <td>
-                                                      <a href="{{ route('post.restore', ['id' => $post->id]) }}" class="btn btn-xs btn-success">Restore</a>
+                                                      <a href="{{ route('post.restore', ['id' => $post->id]) }}" class="btn btn-xs btn-success">Restaurer</a>
                                                 </td>
                                                 <td>
-                                                      <a href="{{ route('post.kill', ['id' => $post->id]) }}" class="btn btn-xs btn-danger">Delete</a>
+                                                      <a href="{{ route('post.kill', ['id' => $post->id]) }}" class="btn btn-xs btn-danger">Détruire</a>
                                                 </td>
                                           </tr>
                                     @endforeach
                               @else
                                     <tr>
-                                          <th colspan="5" class="text-center">No trashed posts</th>
+                                          <th colspan="5" class="text-center">Aucun article dans la corbeille</th>
                                     </tr>
                               @endif
                         </tbody>

@@ -10,13 +10,13 @@
                   <table class="table table-hover">
                         <thead>
                               <th>
-                               Tag name
+                               Tag
                               </th>
                               <th>
-                                    Editing 
+                                    Edition
                               </th>
                               <th>
-                                    Deleting
+                                    Suppression
                               </th>
                         </thead>
 
@@ -29,20 +29,20 @@
                                                 </td>
                                                 <td>
                                                       <a href="{{ route('tag.edit', ['id' => $tag->id ]) }}" class="btn btn-xs btn-info">
-                                                            Edit
+                                                            Editer
                                                       </a>
                                                 </td>
 
                                                 <td>
                                                       <a href="{{ route('tag.delete', ['id' => $tag->id ]) }}" class="btn btn-xs btn-danger">
-                                                      Delete
+                                                      Supprimer
                                                       </a>
                                                 </td>
                                           </tr>
                                     @endforeach
                               @else
                                      <tr>
-                                          <th colspan="5" class="text-center">No tags yet.</th>
+                                          <th colspan="5" class="text-center">Aucun tag</th>
                                     </tr>
                               @endif
                         </tbody>

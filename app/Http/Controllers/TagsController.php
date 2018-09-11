@@ -44,7 +44,7 @@ class TagsController extends Controller
             'tag' => $request->tag
         ]);
 
-        Session::flash('success', 'Tag created successfully.');
+        Session::flash('success', 'Tag créé avec succès.');
 
         return redirect()->route('tags');
     }
@@ -107,7 +107,7 @@ class TagsController extends Controller
     {
         Tag::destroy($id);
 
-        Session::flash('success', 'tag deleted.');
+        Session::flash('success', 'Tag supprimé.');
 
         return redirect()->back();
     }

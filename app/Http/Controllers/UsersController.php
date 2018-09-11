@@ -59,7 +59,7 @@ class UsersController extends Controller
             'avatar' => 'uploads/avatars/1.png'
         ]);
 
-        Session::flash('success', 'User added successfully.');
+        Session::flash('success', 'Utilisateur ajouté.');
 
         return redirect()->route('users');
     }
@@ -112,7 +112,7 @@ class UsersController extends Controller
 
         $user->delete();
 
-        Session::flash('success', 'User deleted.');
+        Session::flash('success', 'Utilisateur supprimé.');
 
         return redirect()->back();
     }
@@ -124,7 +124,7 @@ class UsersController extends Controller
         $user->admin = 1;
         $user->save();
 
-        Session::flash('success', 'Successfully changed user permissions.');
+        Session::flash('success', 'Droit changé.');
 
         return redirect()->back();
     }
@@ -136,7 +136,7 @@ class UsersController extends Controller
         $user->admin = 0;
         $user->save();
 
-        Session::flash('success', 'Successfully changed user permissions.');
+        Session::flash('success', 'Plus administrateur.');
 
         return redirect()->back();
         

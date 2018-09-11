@@ -6,7 +6,7 @@
 
       <div class="panel panel-default">
             <div class="panel-heading">
-                  Edit tag : {{ $tag->tag }}
+                  Mettre à jour le tag : {{ $tag->tag }}
             </div>
 
             <div class="panel-body">
@@ -19,7 +19,7 @@
                         <div class="form-group">
                               <div class="text-center">
                                     <button class="btn btn-success" type="submit">
-                                          Update Tag
+                                          Mettre à jour
                                     </button>
                               </div>
                         </div>

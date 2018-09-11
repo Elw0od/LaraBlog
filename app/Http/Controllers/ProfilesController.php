@@ -108,7 +108,7 @@ class ProfilesController extends Controller
             $user->save();
         }
 
-        Session::flash('success', 'Account profile updated.');
+        Session::flash('success', 'Profil mis à jour.');
 
         return redirect()->back();
     }
